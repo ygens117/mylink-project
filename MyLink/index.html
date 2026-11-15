@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>과제 & 포트폴리오 아카이브 | MyLink</title>
+  
+  <!-- Pretendard 웹 폰트 (깔끔한 한글 폰트) -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #f6f8fd 0%, #e9eef8 100%);
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --card-border: rgba(226, 232, 240, 0.8);
+      --card-hover-bg: #ffffff;
+      --card-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+      --card-hover-shadow: 0 10px 24px rgba(59, 130, 246, 0.12);
+      --text-main: #1e293b;
+      --text-sub: #64748b;
+      --primary: #3b82f6;
+      --primary-light: #eff6ff;
+      --primary-dark: #1d4ed8;
+      --tag-bg: #f1f5f9;
+      --tag-text: #475569;
+      --container-width: 520px;
+      --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    /* 다크 모드 스타일 */
+    [data-theme="dark"] {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --card-border: rgba(51, 65, 85, 0.8);
+      --card-hover-bg: #1e293b;
+      --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      --card-hover-shadow: 0 10px 26px rgba(59, 130, 246, 0.25);
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+      --primary-light: rgba(59, 130, 246, 0.15);
+      --tag-bg: #334155;
+      --tag-text: #cbd5e1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+      transition: background 0.3s ease, color 0.3s ease;
